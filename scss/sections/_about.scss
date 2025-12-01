@@ -1,0 +1,39 @@
+.about {
+    text-align: center;
+
+    // display: flex;
+    h3{
+        font-size: 70px;
+        font-weight: 300;
+    }
+    .about-text {
+        
+        // text-align: center;
+        p {
+            font-size: 20px;
+            text-align: start;
+            // width: 50%;
+            text-align: center;
+            padding: 1% 15% 1%;
+        }
+
+        .skills {
+            // justify-content: center;
+
+            // list-style: none;
+            h1{
+                font-size: 40px;
+                font-weight: 300;
+            }
+            li {
+                // text-align: start;
+                padding: 10px;
+                font-size: 20px;
+                // color: red;
+                list-style: none;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,125 @@
+.site-header {
+    // display: flex;
+    // background-color: aqua;
+    // justify-content: space-between;
+
+    .header-inner {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        height: 55px;
+
+        .brand {
+            margin: 20px 20px;
+            // padding: 20px 20px;
+            width: 200px;
+            // background-color: red;
+            border-radius: 25px;
+            text-align: center;
+            text-transform: uppercase;
+
+            a {
+                text-decoration: none;
+
+                .site-title {
+                    color: wheat;
+                    font-size: 20px;
+                    font-weight: 100;
+                }
+
+                span {
+                    // font-size: 50px;
+                    font-weight: 700;
+                    color: wheat;
+                }
+            }
+
+
+        }
+
+        // navigation
+
+
+        .site-nav {
+            // justify-content: end;
+            // background-color: blue;
+
+            .nav-toggle {
+                display: none;
+                font-size: 28px;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+            .nav-list {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+
+                li a {
+                    text-decoration: none;
+                    color: wheat;
+                    font-size: 20px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: rgb(221, 4, 4);
+                    }
+                }
+
+
+            }
+
+        }
+
+
+        @media(max-width: 768px) {
+            .site-nav {
+
+
+                .nav-toggle {
+                    display: block;
+                    color: white;
+                }
+
+                .nav-list {
+                    position: absolute;
+                    top: 60px;
+                    right: 20px;
+                    background: #222;
+                    color: #fff;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    display: none;
+                }
+
+                .nav-list.show {
+                    display: flex;
+                }
+            }
+
+        }
+    }
+}
+.site-header {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,20 @@
+.site-footer {
+    // background-color: aliceblue;
+    color: white;
+
+    // text-align: center;
+    // display: flex;
+    .footer-inner {
+        // display: flex;
+
+        .contact-list li a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+}

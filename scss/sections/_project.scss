@@ -1,0 +1,38 @@
+.projects {
+    text-align: center;
+
+    h3 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .projects-title {
+        display: flex;
+
+        .project-card {
+            text-align: start;
+            padding: 30px 20px;
+
+            h4 a {
+                font-size: 30px;
+                color: antiquewhite;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:576px) {
+    .projects {
+
+        .projects-title {
+            display: block;
+        }
+    }
+}

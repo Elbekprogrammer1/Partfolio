@@ -1,0 +1,228 @@
+.site-header .header-inner {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 55px;
+}
+.site-header .header-inner .brand {
+  margin: 20px 20px;
+  width: 200px;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.site-header .header-inner .brand a {
+  text-decoration: none;
+}
+.site-header .header-inner .brand a .site-title {
+  color: wheat;
+  font-size: 20px;
+  font-weight: 100;
+}
+.site-header .header-inner .brand a span {
+  font-weight: 700;
+  color: wheat;
+}
+.site-header .header-inner .site-nav .nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.site-header .header-inner .site-nav .nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.site-header .header-inner .site-nav .nav-list li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.site-header .header-inner .site-nav .nav-list li a:hover {
+  color: rgb(221, 4, 4);
+}
+@media (max-width: 768px) {
+  .site-header .header-inner .site-nav .nav-toggle {
+    display: block;
+    color: white;
+  }
+  .site-header .header-inner .site-nav .nav-list {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+  .site-header .header-inner .site-nav .nav-list.show {
+    display: flex;
+  }
+}
+
+.site-header {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.site-main {
+  color: white;
+}
+.site-main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-main .hero .hero-img img {
+  padding: 70px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 80% 95% 70% 90%/45% 60% 35% 55%;
+}
+.site-main .hero .hero-inner .hero-title {
+  margin: 10px 10px;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+.site-main .hero .hero-inner .hero-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.site-main .hero {
+  opacity: 0;
+  animation: fadeIn 5.2s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-main .hero {
+    display: block;
+  }
+}
+.about {
+  text-align: center;
+}
+.about h3 {
+  font-size: 70px;
+  font-weight: 300;
+}
+.about .about-text p {
+  font-size: 20px;
+  text-align: start;
+  text-align: center;
+  padding: 1% 15% 1%;
+}
+.about .about-text .skills h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.about .about-text .skills li {
+  padding: 10px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.projects {
+  text-align: center;
+}
+.projects h3 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.projects .projects-title {
+  display: flex;
+}
+.projects .projects-title .project-card {
+  text-align: start;
+  padding: 30px 20px;
+}
+.projects .projects-title .project-card h4 a {
+  font-size: 30px;
+  color: antiquewhite;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.projects .projects-title .project-card h4 a:hover {
+  color: blue;
+}
+
+@media (max-width: 576px) {
+  .projects .projects-title {
+    display: block;
+  }
+}
+.site-footer {
+  color: white;
+}
+.site-footer .footer-inner .contact-list li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.site-footer .footer-inner .copyright {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.85) 70%, rgb(0, 0, 0) 100%);
+  background-color: #1b1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body__title {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

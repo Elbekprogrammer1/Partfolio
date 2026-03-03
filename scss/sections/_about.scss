@@ -1,39 +1,65 @@
-.about {
-    text-align: center;
+.main {
+    width: min(1100px, calc(100% - 28px));
+    margin: 18px auto 30px;
+    flex: 1;
 
-    // display: flex;
-    h3{
-        font-size: 70px;
-        font-weight: 300;
-    }
-    .about-text {
-        
-        // text-align: center;
-        p {
-            font-size: 20px;
-            text-align: start;
-            // width: 50%;
-            text-align: center;
-            padding: 1% 15% 1%;
-        }
+    .hero {
+        padding: 22px 0;
 
-        .skills {
-            // justify-content: center;
+        .hero-card {
+            padding: 22px;
+            border-radius: var(--radius);
 
-            // list-style: none;
-            h1{
-                font-size: 40px;
-                font-weight: 300;
+            .badge {
+                display: inline-flex;
+                padding: 6px 10px;
+                border-radius: 999px;
+                border: 1px solid rgba(17, 38, 153, 0.35);
+                background: #0c35bb1a;
+                color: #c9e2f7;
+                font-size: 12px;
             }
-            li {
-                // text-align: start;
-                padding: 10px;
-                font-size: 20px;
-                // color: red;
-                list-style: none;
+
+            .hero-title {
+                margin: 14px 0 8px;
+                font-size: 44px;
+                line-height: 1.05;
+                letter-spacing: -.8px;
+
+                .accent {
+                    color: var(--accent);
+                    text-shadow: 0 0 18px rgba(58, 181, 74, .22);
+                }
             }
+
+            .hero-sub {
+                color: var(--muted);
+                font-size: 16px;
+                max-width: 60ch
+            }
+
+            .hero-actions {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-top: 14px;
+
+                .btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    border-radius: 999px;
+                    padding: 10px 14px;
+                    border: 1px solid var(--border);
+                    background: #ffffff0a;
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: var(--text);
+                }
+            }
+
+
         }
     }
 }
-
-

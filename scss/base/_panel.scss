@@ -1,0 +1,43 @@
+  .panel {
+      padding: 16px;
+      border-radius: var(--radius);
+
+      .panel-title {
+          margin: 0 0 10px;
+          font-size: 14px;
+          color: #c9f7cf;
+
+      }
+
+      .muted {
+          color: var(--muted);
+      }
+
+      .bullets {
+          margin: 0;
+          padding-left: 18px;
+          color: var(--muted);
+      }
+  }
+
+  .soft {
+      box-shadow: none;
+      background: #ffffff0b;
+  }
+
+  .split {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+
+      .glass {
+          background: linear-gradient(180deg, var(--glass2), var(--glass));
+          border: 1px solid var(--border);
+          box-shadow: var(--shadow);
+          -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+      }
+
+
+  }

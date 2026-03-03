@@ -1,20 +1,29 @@
-.site-footer {
-    // background-color: aliceblue;
-    color: white;
+footer {
+    align-items: center;
 
-    // text-align: center;
-    // display: flex;
     .footer-inner {
-        // display: flex;
+        display: flex;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
 
-        .contact-list li a {
-            list-style: none;
-            text-decoration: none;
-            color: white;
-        }
-
-        .copyright {
-            text-align: center;
-        }
+padding:0 30px;
     }
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+
+    // height: 30px;
+}
+
+a img {
+    width: 30px;
+    // gap: 30px;
+    // display: flex;
 }

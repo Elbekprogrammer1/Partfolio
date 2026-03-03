@@ -5,11 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Frontend developer portfolio — loyihalar, tajriba va kontaktlar." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+
     <title>Elbek — Frontend Portfolio</title>
 
     <!-- Asosiy CSS -->
@@ -21,126 +17,120 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-        <div class="container header-inner">
-            <div class="brand">
-                <a href="#main" aria-label="Bosh sahifa">
-                    <h1 class="site-title">Frontend<span class="accent">developer</span></h1>
-                </a>
+    <div id="rot">
+        <div class="page">
+            <header class="header glass">
+                <div class="header-line">
+                    <div class="brand">
+                        <div class="brand-title">Mamatov Elbek</div>
+                        <div class="brand-sub">Junior Frontend Developer • Portfolio</div>
+                    </div>
+                    <div class="nav-center">
+                        <nav class="nav">
+                            <a class="nav-link" href="#">Bosh sahifa</a>
+                            <a class="nav-link" href="#">Tajriba</a>
+                            <a class="nav-link" href="">Aloqa</a>
+                        </nav>
+                    </div>
+                    <div class="header-actions">
+                        <div class="long">
+                            <button class="btn btn-smal" type="button" id="uz">UZ</button>
+                            <button class="btn btn-smal" type="button" id="ru">RU</button>
+                            <button class="btn btn-smal" type="button" id="eng">EN</button>
+                        </div>
+                        <a class="btn btn-ghost" href="">Contact</a>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="hero">
+                    <div class="hero-card glass">
+                        <span class="badge">Junior Frontend Developer • Portfolio </span>
+                        <h1 class="hero-title">Mamatov <span class="accent">Elbek</span></h1>
+                        <p class="hero-sub">
+                            Foydalanuvchi uchun qulay va zamonaviy veb-saytlar yarataman.HTML CSS (SCSS) va JavaScript
+                            (ES6+) bo`yicha tajribam bor
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn" href="">Tajriba</a>
+                            <a class="btn" href="">Aloqa</a>
+                        </div>
+                        <div class="split">
+                            <div class="panel glass soft">
+                                <h2 class="panel-title">Men haqimda</h2>
+                                <p class="muted">Men HTML, CSS, SCSS va JavaScript bo'yicha kuchli asoslarga ega bo'lgan
+                                    kichik frontend dasturchisiman.
+                                    Flexbox va Grid yordamida moslashuvchan va toza veb-sayt maketlarini yarata olaman.
+                                </p>
+                            </div>
+                            <div class="panel glass soft">
+                                <h2 class="panel-title">Nima qilaman</h2>
+                                <ul class="bullets muted">
+                                    <li>Kirish ilovasi</li>
+                                    <li>Bajariladigan ishlar uchun ariza</li>
+                                    <li>Kalkulyator</li>
+                                    <li>Shaxsiy portfol veb sayt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="section-head">
+                        <h1>Texnik stek</h1>
+                        <p>Asosiy texnalogiyalar.</p>
+                    </div>
+                    <div class="stack">
+                        <div class="stac-card glass soft">
+                            <h2 class="stack-title">Foydalanuvchi interfeysi</h2>
+                            <div class="stack-tags">
+                                <span class="tag">Reyaksiya qiling</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">TypeScript</span>
 
-            </div>
+                            </div>
+                        </div>
+                        <div class="stac-card glass soft">
+                            <h2 class="stack-title">UL/Uslublar</h2>
+                            <span class="tag">HTML</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Materiyallar interyfeysi</span>
+                        </div>
+                        <div class="stac-card glass soft">
+                            <h2 class="stack-title">Asboblar</h2>
+                            <span class="tag">Git</span>
+                            <span class="tag">Vercel /Netlify</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer glass">
+                <div class="footer-inner">
+                    <div class="muted">© 2026 Mamatov Elbek</div>
+                    <div class="social-row">
+                        <ul>
+                            <li><a href="https://t.me/elbek_mamatov"><img src="img/icon/telegram.png" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/elbek.mamat0v?igsh=MTc2aXo0cDBrZWE1Ng%3D%3D%22"><img
+                                        src="img/icon/instagram.png" alt=""></a></li>
+                            <li><a href="https://github.com/Elbekprogrammer1"><img src="img/icon/github.png" alt=""></a>
+                            </li>
 
-            <nav class="site-nav" role="navigation" aria-label="Asosiy menyu">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-                    <!-- <span class="visually-hidden">Menyu</span> -->
-                    ☰
-                </button>
 
-                <ul id="primary-nav" class="nav-list">
-                    <li><a href="#main">Bosh sahifa</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
         </div>
-    </header>
+    </div>
+    <div id="google_translate_element"></div>
 
-    <!-- MAIN -->
-    <main id="main" class="site-main" role="main">
-        <section class="hero container">
-            <div class="hero-img">
-                <img src="img/IMG_20250414_221725_989-removebg-preview.png" alt="">
-            </div>
-            <div class="hero-inner">
-                <h2 class="hero-title"> Frontend </h2>
-                <h2 class="hero-title"> developer</h2>
-                <p class="hero-subtitle">Foydalanuvchi uchun qulay va zamonaviy veb-saytlar yarataman.
-                </p>
+    
 
-            </div>
-        </section>
 
-        <section id="about" class="about container">
-            <h3>Men haqimda</h3>
-            <div class="about-text">
-                <p>
-                    Men HTML, CSS (SCSS), JavaScript va zamonaviy ramkalar bilan ishlayman. Veb-saytlar va ilovalar
-                    yaratishda tajribam bor, ular tez va foydalanuvchi uchun qulay. Jamoda ishlashni va yangi
-                    texnalogiyalarni o'rganishgni yotiraman. Menign maqsadim - yuqori sifatli veb-ilovalar yaratish
-                    orqali
-                    foydalanuvchiga qulaylik yaratish.
-                </p>
-                <ul class="skills">
-                    <h1>Biladigan texnalogiyalarim</h1>
-                    <li>HTML5 & ARIA</li>
-                    <li>SCSS / BEM</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>Git & Vercel / Netlify</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects" class="projects container">
-            <h3>Projects</h3>
-            <div class="projects-title">
-                <article class="project-card">
-                    <h4 class="project-title"><a href="https://yangichaloyixalar.vercel.app/">Handbrake</a></h4>
-                    <p class="project-desc">Landing page va responsiv layout. HTML & CSS qayta ishlangan.</p>
-                </article>
-
-                <article class="project-card">
-                    <h4 class="project-title"><a href="https://developperfrontend20041590.vercel.app/">PORTEN</a></h4>
-                    <p class="project-desc">Portfolio sayt — interaktiv elementlar va performans optimizatsiyasi.</p>
-                </article>
-
-                <article class="project-card">
-                    <h4 class="project-title"><a href="https://networking-lemon.vercel.app/">Infinizai</a></h4>
-                    <p class="project-desc">SPA tarzida yengil loyiha; formalar va validatsiya.</p>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer id="contact" class="site-footer container" role="contentinfo">
-        <div class="footer-inner">
-            <h3>Contact</h3>
-            <ul class="contact-list">
-                <li>Email: <a href="elbekprogrammer1@gmail.com">elbekprogrammer1@gmail.com</a></li>
-                <li>Telegram: <a href="https://t.me/elbek_mamatov" target="_blank" rel="noopener">https://t.me/elbek_mamatov</a></li>
-                <li>Instagram: <a href=https://www.instagram.com/elbek.mamat0v?igsh=MTc2aXo0cDBrZWE1Ng==" target="_blank" rel="noopener">@elbek.mamat0v</a>
-                </li>
-            </ul>
-
-            <p class="copyright">© <span id="year"></span> Elbek. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Minimal JS for small interactions (nav toggle, year) -->
-    <script>
-        // Nav toggle for small screens
-        const navToggle = document.querySelector('.nav-toggle');
-        const navList = document.getElementById('primary-nav');
-        navToggle?.addEventListener('click', () => {
-            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
-            navToggle.setAttribute('aria-expanded', !expanded);
-            navList.classList.toggle('open');
-        });
-
-        // Current year
-        document.getElementById('year').textContent = new Date().getFullYear();
-         const toggle = document.querySelector(".nav-toggle");
-            const nav = document.querySelector(".nav-list");
-
-            toggle.addEventListener("click", () => {
-                nav.classList.toggle("show");
-
-                const expanded = toggle.getAttribute("aria-expanded") === "true" || false;
-                toggle.setAttribute("aria-expanded", !expanded);
-            });
-    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+<script src="js/main.js"></script>
 
 </html>

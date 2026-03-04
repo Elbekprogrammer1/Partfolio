@@ -199,6 +199,23 @@
   backdrop-filter: blur(12px);
 }
 
+@media (max-width: 768px) {
+  .split {
+    display: block;
+    margin-top: 10px;
+  }
+  .split .panel {
+    display: block;
+  }
+}
+@media (max-width: 414px) {
+  .split {
+    display: block;
+  }
+  .bullets {
+    display: block;
+  }
+}
 .section {
   padding: 6px 0;
 }
@@ -238,6 +255,11 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+@media (max-width: 414px) {
+  .section .stack {
+    display: block;
+  }
 }
 
 footer {

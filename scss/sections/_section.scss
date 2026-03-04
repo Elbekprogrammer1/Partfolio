@@ -46,4 +46,11 @@
             flex-wrap: wrap;
         }
     }
+
+    @media (max-width:414px){
+        .stack{
+            display: block;
+            
+        }
+    }
 }

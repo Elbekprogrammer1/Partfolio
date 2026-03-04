@@ -62,26 +62,3 @@
     }
 }
 
-@media(max-width: 768px) {
-    .main{
-       .hero{
-        .split{
-            display: block;
-            background-color: red;
-            .panel{
-                display: block;
-            }
-        }
-       } 
-    }
-}
-@media(max-width:414px){
-    .main{
-        .hero{
-            .split{
-                display: block;
-                
-            }
-        }
-    }
-}
